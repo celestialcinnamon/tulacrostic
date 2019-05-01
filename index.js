@@ -1,7 +1,7 @@
 "use strict";
 var dataset;
 document.addEventListener("DOMContentLoaded", function(e){
-    let promise = fetch("/data.json");
+    let promise = fetch("./data.json");
     promise.then(raw => raw.json())
         .then(data => {
             dataset = data
